@@ -1,0 +1,130 @@
+﻿<Window x:Class="WpfApp16.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp16"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="800">
+    <Canvas>
+        <Path Data="M97,169.04 C97,169.04 171.69016,69.406009 277.5,167.53999" Height="46" Canvas.Left="97" Stroke="Black" Stretch="Fill" Canvas.Top="124.31" Width="182" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Path Data="M279.5,169.53999 C168.5,271.53999 98,171.04 98,171.04" Height="47" Canvas.Left="98" Stroke="Black" Stretch="Fill" Canvas.Top="169.54" Width="182" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Path Data="M97,169.04 C97,169.04 171.69016,69.406009 277.5,167.53999" Height="46" Canvas.Left="339" Stroke="Black" Stretch="Fill" Canvas.Top="123.54" Width="182" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Path Data="M279.5,169.53999 C168.5,271.53999 98,171.04 98,171.04" Height="47" Canvas.Left="339" Stroke="Black" Stretch="Fill" Canvas.Top="169.54" Width="182" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Ellipse Height="40" 
+                 Canvas.Left="224.5" 
+                 Stroke="Black" 
+                 Canvas.Top="147.31" 
+                 Width="40" 
+                 HorizontalAlignment="Left" 
+                 VerticalAlignment="Top">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="White" Offset="0"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+            <Ellipse.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames
+                                Storyboard.TargetProperty="(Canvas.Top)"
+                                Duration="0:0:3"
+                                RepeatBehavior="Forever">
+                                <LinearDoubleKeyFrame KeyTime="0%" Value="147"/>
+                                <LinearDoubleKeyFrame KeyTime="25%" Value="153"/>
+                                <LinearDoubleKeyFrame KeyTime="50%" Value="175"/>
+                                <LinearDoubleKeyFrame KeyTime="75%" Value="147"/>
+                                <LinearDoubleKeyFrame KeyTime="99%" Value="147"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames
+                                Storyboard.TargetProperty="(Canvas.Left)"
+                                Duration="0:0:3"
+                                RepeatBehavior="Forever">
+                                <LinearDoubleKeyFrame KeyTime="0%" Value="163"/>
+                                <LinearDoubleKeyFrame KeyTime="25%" Value="109"/>
+                                <LinearDoubleKeyFrame KeyTime="50%" Value="163"/>
+                                <LinearDoubleKeyFrame KeyTime="75%" Value="224"/>
+                                <LinearDoubleKeyFrame KeyTime="99%" Value="163"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Ellipse.Triggers>
+        </Ellipse>
+        <Ellipse Height="40" 
+                 Canvas.Left="464" 
+                 Stroke="Black" 
+                 Canvas.Top="147.31" 
+                 Width="40" 
+                 HorizontalAlignment="Left" 
+                 VerticalAlignment="Top">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="White" Offset="0"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+            <Ellipse.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames
+                                Storyboard.TargetProperty="(Canvas.Top)"
+                                Duration="0:0:3"
+                                RepeatBehavior="Forever">
+                                <LinearDoubleKeyFrame KeyTime="0%" Value="146"/>
+                                <LinearDoubleKeyFrame KeyTime="25%" Value="146"/>
+                                <LinearDoubleKeyFrame KeyTime="50%" Value="173"/>
+                                <LinearDoubleKeyFrame KeyTime="75%" Value="147"/>
+                                <LinearDoubleKeyFrame KeyTime="99%" Value="147"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames
+                                Storyboard.TargetProperty="(Canvas.Left)"
+                                Duration="0:0:3"
+                                RepeatBehavior="Forever">
+                                <LinearDoubleKeyFrame KeyTime="0%" Value="410"/>
+                                <LinearDoubleKeyFrame KeyTime="25%" Value="464"/>
+                                <LinearDoubleKeyFrame KeyTime="50%" Value="410"/>
+                                <LinearDoubleKeyFrame KeyTime="75%" Value="352"/>
+                                <LinearDoubleKeyFrame KeyTime="99%" Value="410"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Ellipse.Triggers>
+        </Ellipse>
+        <Path Data="M97.666667,151.70667 C97.666667,151.70667 165.49966,76.540335 276.833,151.70667" Height="34" Canvas.Left="97.667" Stroke="Black" Stretch="Fill" Canvas.Top="118.3" Width="180"/>
+        <Path Data="M328.66667,162.04 C328.66667,162.04 412.83299,60.873327 534.83299,164.20666" Height="47" Canvas.Left="328.667" Stroke="Black" Stretch="Fill" Canvas.Top="117.712" Width="207"/>
+        <Path Data="M308,199.04 L233.5,326.53999 320.91333,349.12859" Fill="#FFF4F4F5" Height="150" Canvas.Left="233.5" Stroke="Black" Stretch="Fill" Canvas.Top="199.04" Width="89"/>
+        <Path Data="M186,423.54 L265,400.54001 293.5,408.04001 318.11449,400.54001 418.46096,424.54001" Fill="#FFF4F4F5" Height="25" Canvas.Left="186" Stroke="Black" Stretch="Fill" Canvas.Top="400.54" Width="232" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Path Data="M580.5,186.54 L592,256.53999 583.11364,282.04001" Fill="#FFF4F4F5" Height="96" Canvas.Left="580.5" Stroke="Black" Stretch="Fill" Canvas.Top="186.54" Width="12" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Path Data="M384,308.04" Fill="#FFF4F4F5" Height="1" Canvas.Left="384" Stroke="Black" Stretch="Fill" Canvas.Top="308.04" Width="1"/>
+        <Path Data="M57,188.04 L35.5,256.53999 47.785714,288.80451" Fill="#FFF4F4F5" Height="102" Canvas.Left="35.5" Stroke="Black" Stretch="Fill" Canvas.Top="188.04" Width="22" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Path Data="M136.5,74.04 C136.5,74.04 332.5,-80.959999 560.5,106.54" Fill="#FFF4F4F5" Height="94" Canvas.Left="136.5" Stroke="Black" Stretch="Fill" Canvas.Top="13.858" Width="425"/>
+        <Path Data="M85.5,132.54 C102.85353,106.5097 118.3817,80.111453 136.5,56.04" Fill="#FFF4F4F5" Height="78" Canvas.Left="85.5" Stroke="Black" Stretch="Fill" Canvas.Top="56.04" Width="52"/>
+        <Path Data="M115.5,126.54 C132.58691,105.76767 142.93534,87.351507 153,63.54" Fill="#FFF4F4F5" Height="64" Canvas.Left="115.5" Stroke="Black" Stretch="Fill" Canvas.Top="63.54" Width="38"/>
+        <Path Data="M160.5,119.04 C169.3011,95.277038 176.13328,74.507994 183,51.54" Fill="#FFF4F4F5" Height="68" Canvas.Left="160.5" Stroke="Black" Stretch="Fill" Canvas.Top="51.54" Width="24"/>
+        <Path Data="M198,107.04 C199.60815,86.455662 202.59243,66.229956 205.5,47.04" Fill="#FFF4F4F5" Height="61" Canvas.Left="198" Stroke="Black" Stretch="Fill" Canvas.Top="47.04" Width="8"/>
+        <Path Data="M268.5,42.54 C329.46295,62.860983 393.41214,86.494951 457.5,95.04 494.76669,100.00889 531.3311,107.48461 567,114.54" Fill="#FFF4F4F5" Height="73" Canvas.Left="268.5" Stroke="Black" Stretch="Fill" Canvas.Top="42.54" Width="300"/>
+        <Path Data="M318,27.54 C395.22409,61.696811 473.78895,74.821132 559.5,83.04" Fill="#FFF4F4F5" Height="56" Canvas.Left="318" Stroke="Black" Stretch="Fill" Canvas.Top="27.54" Width="242"/>
+        <Path Data="M376.5,33.54 C437.83785,37.62919 506.38099,34.498606 564,54.54" Fill="#FFF4F4F5" Height="22" Canvas.Left="376.5" Stroke="Black" Stretch="Fill" Canvas.Top="33.54" Width="188"/>
+        <Path Data="M244.5,62.04 C261.06083,71.462541 274.21792,82.055376 292.5,87.54 305.25402,91.366206 317.68671,94.132179 331.5,96.54" Fill="#FFF4F4F5" Height="36" Canvas.Left="244.5" Stroke="Black" Stretch="Fill" Canvas.Top="62.04" Width="88"/>
+        <Path Data="M355.5,24.54 C387.3607,24.54 412.1462,16.938411 441,9.54" Fill="#FFF4F4F5" Height="16" Canvas.Left="355.5" Stroke="Black" Stretch="Fill" Canvas.Top="9.54" Width="86"/>
+        <Path Data="M232.5,38.04 C238.47086,56.314447 243.52855,64.164499 256.5,80.04" Fill="#FFF4F4F5" Height="43" Canvas.Left="232.5" Stroke="Black" Stretch="Fill" Canvas.Top="38.04" Width="25"/>
+        <Path Data="M252,38.04 C267.59058,41.583314 278.15054,45.500454 292.5,53.04" Fill="#FFF4F4F5" Height="16" Canvas.Left="252" Stroke="Black" Stretch="Fill" Canvas.Top="38.04" Width="42"/>
+        <Path Data="M277.5,20.04 C297.30471,37.912542 318.13323,50.603839 342,62.04" Fill="#FFF4F4F5" Height="43" Canvas.Left="277.5" Stroke="Black" Stretch="Fill" Canvas.Top="20.04" Width="66"/>
+        <Path Data="M192,434.04 L413.5,436.54001 299.74321,457.37334 z" Fill="#FFF4F4F5" Height="29" Canvas.Left="192" Stroke="Black" Stretch="Fill" Canvas.Top="434.04" Width="222" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Path Data="M573.07509,342.89709 L529,445.96855 380.5,529.53998 C380.5,529.53998 235.5,536.04 235.5,536.04 234.99915,537.89712 117.79949,457.1114 117.79949,457.1114 L71.271328,349.86252" Height="209" Canvas.Left="71.5" Stroke="Black" Stretch="Fill" Canvas.Top="328.54" Width="502" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+    </Canvas>
+</Window>
